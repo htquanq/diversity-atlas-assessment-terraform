@@ -1,0 +1,6 @@
+environment: &environment "develop"
+name: &name "k8s"
+image_id: "sample-aws-AMI"
+tags:
+  Name: *name
+  Environment: *environment

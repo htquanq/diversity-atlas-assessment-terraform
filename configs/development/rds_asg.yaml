@@ -1,0 +1,8 @@
+environment: &environment "develop"
+name: &name "rds"
+min_size: 1
+max_size: 10
+desired_capacity: 5
+tags:
+  Name: *name
+  Environment: *environment
