@@ -1,0 +1,9 @@
+---
+environment: &environment develop
+vpc_name: &vpc_name "htquanq2"
+cidr_block: "10.2.0.0/16"
+enable_dns_hostnames: True
+
+tags:
+  Name: *vpc_name
+  Environment: *environment
