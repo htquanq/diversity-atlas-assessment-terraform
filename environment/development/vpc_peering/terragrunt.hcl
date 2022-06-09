@@ -4,7 +4,7 @@ include "root" {
 }
 
 terraform {
-  source = "${dirname(find_in_parent_folders())}/../modules/vpc_peering"
+  source = "${dirname(find_in_parent_folders())}/../../modules/vpc_peering"
 }
 
 dependency "vpc1"{

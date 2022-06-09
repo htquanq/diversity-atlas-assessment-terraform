@@ -4,7 +4,7 @@ include "root" {
 }
 
 terraform {
-  source = "${dirname(find_in_parent_folders())}/../modules/autoscaling_group"
+  source = "${dirname(find_in_parent_folders())}/../../modules/autoscaling_group"
 }
 
 dependency "launch_template"{
@@ -16,7 +16,7 @@ dependency "vpc1" {
 }
 
 inputs = merge(
-  file("${dirname(find_in_parent_folders())}/../configs/development/k8s_asg.yaml"),
+  file("${dirname(find_in_parent_folders())}/../../configs/development/k8s_asg.yaml"),
   {
     vpc_zone_identifier = dependency.vpc1.outputs.id
   },
